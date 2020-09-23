@@ -14,8 +14,8 @@ if(!isset($_SESSION['username'])) //para seguridad del admin code
                  
                  if(($_SERVER['REQUEST_URI'] == "/PAGINA/public/admin/index.php"))
                  {
-                    require_once("../../resources/templates/back/AdminContent.php"); 
-                    
+                    require_once("../../resources/templates/back/adminContent.php"); 
+
                  }
 
                  if(isset($_GET['ordenes']))
