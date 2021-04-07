@@ -12,10 +12,15 @@ if(!isset($_SESSION['username'])) //para seguridad del admin code
                
                 // echo "/PAGINA/public/admin/index.php?user={$_GET['user']}";                 
                  
-                 if(($_SERVER['REQUEST_URI'] == "/PAGINA/public/admin/index.php"))
+                 if(($_SERVER['REQUEST_URI'] == "/Shoes%20Company%20(PHP)/PAGINA/public/admin/index.php") || ($_SERVER['REQUEST_URI'] == "/Shoes%20Company%20(PHP)/PAGINA/public/admin/"))
                  {
+<<<<<<< Updated upstream
                     require_once("../../resources/templates/back/adminContent.php"); 
 
+=======
+                    include("../../resources/templates/back/adminContent.php"); 
+                    
+>>>>>>> Stashed changes
                  }
 
                  if(isset($_GET['ordenes']))
